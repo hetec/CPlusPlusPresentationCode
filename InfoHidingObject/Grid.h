@@ -7,6 +7,7 @@
 
 #include <iostream>
 
+
 class Grid{
 private:
     int mGap;
@@ -77,6 +78,10 @@ public:
     void printPos(){
         std::cout << "Your point is on the position: (" << mPosX << ", " << mPosY << ")" << std::endl;
     }
+
+//    friend int main();
+    friend class Drawer;
+
 };
 
 #endif //CODECPLUSPLUS_MESH_H
